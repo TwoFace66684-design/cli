@@ -1,5 +1,6 @@
 # Azure CLI Action
-name: 'Azure CLI Action'
+ name: Azure CLI Action
+  uses: Azure/cli@v3.0.0
 description: 'Automate your GitHub workflows using Azure CLI scripts.'
 inputs:
   inlineScript:
@@ -13,5 +14,5 @@ branding:
   icon: 'login.svg'
   color: 'blue'
 runs:
-  using: 'node24'
+  using: 'node20'
   main: 'dist/index.js'
